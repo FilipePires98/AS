@@ -1,31 +1,39 @@
-# Projects on Software Architecture
+# SCP
+Simulation of a Scientific Computation Platform With a Focus on Quality Attributes
 
 ## Description
 
-This repository contains the work done by the authors on the practical assignments for the course in Software Architecture of the MSc. in Informatics Engineering of the University of Aveiro.
-Each project directory contains its own 'README.md' with details on the assignment and instructions on how to run the code.
+The aim of the assignment was to design and develop a software architecture relying on four of the most relevant quality attributes: performance, availability, scalability and usability.
+During development, we came up with the solution for an infrastructure for our stakeholder.
+The platform here presented is capable of deploying a cluster of servers monitored by a tactic entity and whose requests from clients are distributed by a load balancer.
+Although the cluster is locally simulated, the configuration is done so that it is possible to deploy in a distributed environment.
 
-'Project 1 - Harvest Simulation' contains the first assignment, focused on an architecture where concurrency (processes and threads) are a key aspect.
+<p float="left">
+  <img src="https://github.com/FilipePires98/SCP/blob/master/docs/img/C_active.png" width="360px">
+  <img src="https://github.com/FilipePires98/SCP/blob/master/docs/img/S_active.png" width="360px">
+</p>
 
-![UserInterface1](https://github.com/FilipePires98/Projects-on-SoftwareArchitecture/blob/master/Project1-HarvestSimulation/Report/img/UserInterface_CC_2.png)
+GUIs of each independent process during the processing of multiple requests.
 
-'Project 2 - Vehicle Supervising' contains the second assignment, focused on a platform based on Apache Kafka that collects and processes information from 
-simulated vehicles.
+![UserInterface3-lbm](https://github.com/FilipePires98/SCP/blob/master/docs/img/LBM_large.png)
 
-![UserInterface2](https://github.com/FilipePires98/Projects-on-SoftwareArchitecture/blob/master/Project2-VehicleSupervising/Report/img/GUI_3.png)
+Load Balancer and Tactic Manager’s GUI in expanded view during the processing of multiple requests in a cluster of 20 Calculation servers.
 
-'Project 3 - Scientific Computation Platform' contains the third assignment, focused on a scientific computation platform that relies on four of the most relevant 
-quality attributes: performance, availability, scalability and usability.
+## Repository Structure
 
-![UserInterface3-c](https://github.com/FilipePires98/Projects-on-SoftwareArchitecture/blob/master/Project3-ScientificComputationPlatform/Report/img/C_active.png)
-![UserInterface3-s](https://github.com/FilipePires98/Projects-on-SoftwareArchitecture/blob/master/Project3-ScientificComputationPlatform/Report/img/S_active.png)
+/docs - contains project report and diagrams
 
-![UserInterface3-lbm](https://github.com/FilipePires98/Projects-on-SoftwareArchitecture/blob/master/Project3-ScientificComputationPlatform/Report/img/LBM_large.png)
+/src - contains the source code of the simulator, written in Java
 
-## Authors:
+## Instructions to Build and Run
 
-The authors of this repository are Filipe Pires and João Alegria.
+1. Have installed Java SE8.
+2. Have installed NetBeans or other IDE (only tested with NetBeans).
+3. Open the project folder 'PA3_P1G07' on your IDE.
+4. Run the Main class and enjoy the Simulated Scientific Computation Platform.
 
-For further information, please read our reports or contact us at filipesnetopires@ua.pt or joao.p@ua.pt.
+## Authors
 
+The authors of this repository are Filipe Pires and João Alegria, and the project was developed for the Software Architecture Course of the Master's degree in Informatics Engineering of the University of Aveiro.
 
+For further information, please read our [report](https://github.com/FilipePires98/SCP/blob/master/docs/report.pdf) or contact us at filipesnetopires@ua.pt or joao.p@ua.pt.
