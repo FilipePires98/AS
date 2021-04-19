@@ -1,6 +1,12 @@
 # SCP
 Simulation of a Scientific Computation Platform With a Focus on Quality Attributes
 
+![](https://img.shields.io/badge/Academical%20Project-Yes-success)
+![](https://img.shields.io/badge/License-Free%20To%20Use-green)
+![](https://img.shields.io/badge/Made%20With-Java-red)
+![](https://img.shields.io/badge/Made%20With-Kafka-red)
+![](https://img.shields.io/badge/Maintained-No-red)
+
 ## Description
 
 The aim of the assignment was to design and develop a software architecture relying on four of the most relevant quality attributes: performance, availability, scalability and usability.
